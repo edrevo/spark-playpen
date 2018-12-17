@@ -14,7 +14,7 @@ object Lesson2 extends App {
 
   val data = spark.sparkContext.parallelize(1 to 1000)
   println(data
-    .map(1 +)
+    .map(_ + 1)
     .filter(_ % 2 == 0)
     .count())
 }

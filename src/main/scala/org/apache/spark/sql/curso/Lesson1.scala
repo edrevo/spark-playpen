@@ -6,7 +6,7 @@ import scala.language.postfixOps
 object Lesson1 extends App {
   val data = 1 to 1000
   println(data
-    .map(1 +)
+    .map(_ + 1)
     .filter(_ % 2 == 0)
     .length)
 }
